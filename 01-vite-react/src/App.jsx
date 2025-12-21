@@ -1,9 +1,13 @@
 
+import Test from "./test"
 
 function App() {
 
   return (
-    <h1>Hello React using vite library</h1>
+    <>
+      {/* <h1>Hello React using vite library</h1> */}
+      <Test />
+    </>
   )
 }
 
