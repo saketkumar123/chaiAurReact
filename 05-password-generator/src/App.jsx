@@ -11,6 +11,7 @@ function App() {
   const [password, setPassword] = useState('')
 
   const passRef = useRef(null)
+  const btnRef = useRef()
 
   let passwordGenerator = useCallback(() => {
 
