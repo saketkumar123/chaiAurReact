@@ -19,7 +19,6 @@ export class Service {
             return await this.tablesDB.createRow(
                 conf.appWriteDatabaseId,
                 conf.appWriteTableId,
-                ID.unique(),
                 slug,
                 {
                     title,
@@ -80,7 +79,7 @@ export class Service {
 
         } catch (error) {
             console.log("Appwrite service :: getPosts :: error", error);
-            return false
+            return { documents: [] }
         }
     }
 }
