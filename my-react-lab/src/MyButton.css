@@ -1,0 +1,37 @@
+.msg-btn{
+    background: #e8e8e8;
+    border-radius: 50px;
+    width: 52px;
+    height: 52px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rbga(0,0,0,0.12);
+}
+
+.msg-btn .icon{
+    font-size: 22px;
+    transition: all 0.4s ease;
+    position: absolute;
+    opacity: 1;
+}
+
+.msg-btn .text{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.msg-btn:hover{
+    background: #27b1fb;
+    width: 150px;
+    box-shadow: 0 6px 20px rgba(24, 119, 242, .45);
+}
+
+.msg-btn:hover .icon{
+    opacity: 0;
+    transform:  translateY(-10px);
+}
+
+.msg-btn:hover .text{
+    opacity: 1;
+    transform: translateY(0);
+}
